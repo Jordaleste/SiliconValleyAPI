@@ -1,3 +1,4 @@
+// https://siliconevalleyapi.herokuapp.com/ 
 
 const express = require('express');
 
@@ -13,7 +14,7 @@ app.get('/', function(req, res) {
 });
 
 
-
+let port = process.env.PORT
 
 if (port == null || port == "") {
     port = 3000;
